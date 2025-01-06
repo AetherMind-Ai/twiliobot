@@ -7,10 +7,10 @@ app = Flask(__name__)
 
 
 # Use environment variables for credentials (Vercel or locally)
-TWILIO_ACCOUNT_SID = os.getenv("ACa6fe41bd64d0697ae87e9a208aafdc04")
-TWILIO_AUTH_TOKEN = os.getenv("ccf4595d43360d9ff67d9b5e14d4ec67")
-TWILIO_PHONE_NUMBER = os.getenv("+14155238886")
-GEMINI_API_KEY = os.getenv("AIzaSyB-1Bk3r2Ce11TZLHBZUgC2z1EIZwek024")
+TWILIO_ACCOUNT_SID = "ACa6fe41bd64d0697ae87e9a208aafdc04"
+TWILIO_AUTH_TOKEN = "ccf4595d43360d9ff67d9b5e14d4ec67"
+TWILIO_PHONE_NUMBER = "+14155238886"
+GEMINI_API_KEY = "AIzaSyB-1Bk3r2Ce11TZLHBZUgC2z1EIZwek024"
 
 genai.configure(api_key=GEMINI_API_KEY)
 
